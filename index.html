@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>${ htmlWebpackPlugin.options.title }</title>
+</head>
+
+<body>
+    <div class="jd-layout">
+        <!-- 头部搜索 -->
+        <header class="jd-header">
+            <div class="jd-header-box">
+                <a href="#" class="icon-logo"></a>
+                <form class="search-form">
+                    <span class="icon-search"></span>
+                    <input type="search" name="" value="" placeholder="提示">
+                </form>
+                <a href="#" class="login">登录</a>
+            </div>
+        </header>
+        <!-- 轮播图 -->
+        <section class="jd-slide">
+            <ul class="oUl clearfix">
+                <li><img src="./src/images/l8.jpg" alt=""></li>
+                <li><img src="./src/images/l1.jpg" alt=""></li>
+                <li><img src="./src/images/l2.jpg" alt=""></li>
+                <li><img src="./src/images/l3.jpg" alt=""></li>
+                <li><img src="./src/images/l4.jpg" alt=""></li>
+                <li><img src="./src/images/l5.jpg" alt=""></li>
+                <li><img src="./src/images/l6.jpg" alt=""></li>
+                <li><img src="./src/images/l7.jpg" alt=""></li>
+                <li><img src="./src/images/l8.jpg" alt=""></li>
+                <li><img src="./src/images/l1.jpg" alt=""></li>
+            </ul>
+            <ul id="point">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <!--导航栏-->
+        <nav class="jd-nav">
+            <ul>
+                <li>
+                    <a href="./category.html">
+                        <img src="./src/images/nav0.png" alt="">
+                        <p>分类查询</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./src/images/nav1.png" alt="">
+                        <p>物流查询</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./cart.html">
+                        <img src="./src/images/nav2.png" alt="">
+                        <p>购物车</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./src/images/nav3.png" alt="">
+                        <p>我的京东</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./src/images/nav4.png" alt="">
+                        <p>充值</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./src/images/nav5.png" alt="">
+                        <p>领劵中心</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./src/images/nav6.png" alt="">
+                        <p>京东超市</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./src/images/nav7.png" alt="">
+                        <p>我的关注</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!--商品区域-->
+        <main class="jd-products">
+            <section class="second-kill jd-products-box">
+                <div class="products-box-top no-bor">
+                    <div class="sec-k-t-l">
+                        <span class="icon-time"></span>
+                        <h4 class="os-name">掌上秒杀</h4>
+                        <div class="os-time">
+                            <span class="num">0</span>
+                            <span class="num">0</span>
+                            <span class="str">:</span>
+                            <span class="num">0</span>
+                            <span class="num">0</span>
+                            <span class="str">:</span>
+                            <span class="num">0</span>
+                            <span class="num">0</span>
+                        </div>
+                    </div>
+                    <div class="sec-k-t-r">
+                        <a href="#">更多></a>
+                    </div>
+                </div>
+                <div class="products-box-bot">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="#">
+                                <div class="img-box"><img src="./src/images/detail02.jpg" alt=""></div>
+                                <p class="now-price">&yen;20.00</p>
+                                <p class="old-price">&yen;200.00</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img-box"><img src="./src/images/detail02.jpg" alt=""></div>
+                                <p class="now-price">&yen;20.00</p>
+                                <p class="old-price">&yen;200.00</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img-box"><img src="./src/images/detail02.jpg" alt=""></div>
+                                <p class="now-price">&yen;20.00</p>
+                                <p class="old-price">&yen;200.00</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="shopping jd-products-box clearfix">
+                <div class="products-box-top">
+                    <h3>超值购</h3>
+                </div>
+                <div class="products-box-bot">
+                    <a href="#" class="pull-left bor-right">
+                        <img src="./src/images/cp1.jpg" alt="">
+                    </a>
+                    <a href="#" class="pull-right bor-bot">
+                        <img src="./src/images/cp2.jpg" alt="">
+                    </a>
+                    <a href="#" class="pull-right">
+                        <img src="./src/images/cp3.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+            <section class="shopping jd-products-box">
+                <div class="products-box-top">
+                    <h3>热门活动</h3>
+                </div>
+                <div class="products-box-bot">
+                    <a href="#" class="pull-right">
+                        <img src="./src/images/cp4.jpg" alt="">
+                    </a>
+                    <a href="#" class="pull-left">
+                        <img src="./src/images/cp5.jpg" alt="">
+                    </a>
+                    <a href="#" class="pull-left">
+                        <img src="./src/images/cp6.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

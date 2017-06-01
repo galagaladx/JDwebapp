@@ -1,0 +1,211 @@
+@import './base.styl';
+@import './mixin.styl';
+
+body
+  background-color #f5f5f5
+  // 清除定位
+.jd-check-box[checked]
+  checked()
+.jd-check-box
+  checkBox()
+.jd-topbar
+  position static
+.safe-tip
+  width 100%
+  height 34px
+  line-height 34px
+  font-size 13px
+  text-align center
+  border-bottom 1px solid #e0e0e0
+  background-color: #fff
+  p
+    display inline-block
+    position: relative
+    width 240px
+    padding-left 20px
+    &::before
+      display block
+      position absolute
+      top 8px
+      left 0
+      content " "
+      width 18px
+      height 18px
+      background: url('../images/safe_icon.png') no-repeat
+      background-size: 18px 18px 
+.jd-cart
+  margin-top 10px
+  background-color #fff
+  .jd-titel
+    position relative
+    height 36px
+    border-top 1px solid #e0e0e0
+    border-bottom 1px solid #e0e0e0
+    .jd-check-box
+      position absolute
+      top 8px
+      left 10px
+    .jd-tip
+      margin-left 32px
+      line-height 36px
+      .img-logo
+        float left
+        display block
+        width 15px
+        height 13px
+        margin 11px 5px 0 10px
+      .jd-name
+        font-size 13px
+      .jd-server
+        float right
+        margin-right 4px
+        font-size 14px
+        color #d8505c
+  .jd-products
+    position relative
+    border-bottom 1px solid #e0e0e0
+    .jd-check-box
+      position absolute
+      top 32px
+      left 10px
+    .jd-product-box
+      margin-top 10px
+      padding 0 10px 10px 40px
+      .product
+        display block
+        float left
+        width 80px
+        height 80px
+        margin-right 10px
+        img
+          width 100%
+          height 100%
+      .message
+        .des
+          display block
+          height 30px
+          line-height 15px
+          font-size 12px
+          color #ccc
+          overflow hidden
+        .price
+          margin-top 5px
+      .options
+        width 100%
+        height 24px
+        margin-top 5px
+        .change-box
+          float left
+          .num-down
+            numBox()
+          .num
+            numBox()
+            border-left none
+            border-right none
+          .num-up
+            numBox(false)
+        .delete-box
+          float right
+          .box-top
+            width 20px
+            height 5px
+            margin-left -1px
+            background url('../images/delete_up.png') no-repeat
+            background-size 20px 5px
+          .box-bot
+            width 18px
+            height 18px
+            margin-top -3px
+            background url('../images/delete_down.png') no-repeat
+            background-size 18px 18px
+.jd-amount
+  position fixed
+  left 0
+  bottom 0
+  width 100%
+  height 62px
+  color #fff
+  background-color rgba(0, 0, 0, .8)
+  .amount-check
+    position absolute
+    width 70px
+    line-height 62px
+    .jd-check-box
+      position absolute
+      top 22px
+      left 5px
+    span
+      margin-left 28px
+  .jd-info
+    position absolute
+    top 10px
+    left 80px
+    p
+      margin-top 2px
+  .check-out
+    position absolute
+    top 0
+    right 0
+    width 120px
+    height 62px
+    padding-right 4px
+    line-height 62px
+    text-align center
+    background-color #d8505c
+.jd-win
+  position fixed
+  top 0
+  left 0
+  z-index 9999
+  display none
+  width 100%
+  height 100%
+  background-color rgba(0,0,0,.6)
+  .jd-win-box
+    width 85%
+    height 120px
+    margin 50% auto 0
+    padding 0 5%
+    border 1px solid #e0e0e0
+    border-radius 5px
+    background-color #fff
+    .jd-win-tip
+      margin-bottom 10px
+      line-height 60px
+      text-align center
+      font-size 16px
+      color #666
+      border-bottom 1px solid #e0e0e0
+    .jd-btn-box
+      .submit
+        btn(#fff,#d8505c)
+        margin-right 10%
+      .cancel
+        btn(#ccc,#fff)
+// 跳出动画
+@keyframes jumpOut {
+  0% {
+    opacity 0
+    transform translateY(-2000px)
+  }
+  60% {
+    opacity 1
+    transform translateY(30px)
+  }
+  75% {
+    opacity 1
+    transform translateY(-10px)
+  }
+  90% {
+    opacity 1
+    transform translateY(5px)
+  }
+  100% {
+     opacity 1
+    transform none
+  }
+}
+
+.jumpOut {
+  animation jumpOut 1s ease 0s;
+}

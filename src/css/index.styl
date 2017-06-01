@@ -1,0 +1,239 @@
+/*1.位置属性(position, top, right, z-index, display, float等)
+2.大小(width, height, padding, margin)
+3.文字系列(font, line-height, letter-spacing, color- text-align等)
+4.背景(background, border等)
+5.其他(animation, transition等)*/
+@import './base.styl';
+body
+  background-color #f0f0f0
+.jd-layout
+  position: relative
+  max-width 640px
+  min-width 300px
+  margin 0 auto
+  .jd-header
+    position fixed
+    top 0
+    left 0
+    z-index 888
+    width 100%
+    height 40px
+    .jd-header-box
+      position relative
+      max-width 640px
+      min-width 300px
+      height 40px
+      margin 0 auto
+      background rgba(201, 21, 35 0)
+      .icon-logo
+        position absolute
+        top 4px
+        left 10px
+        display block
+        height 36px
+        width 60px
+        background-position: 0 -103px
+     .search-form
+        position relative
+        width 100%
+        height 40px
+        padding-left 75px
+        padding-right 55px
+        .icon-search
+          position absolute
+          top 10px
+          left 85px
+          display block
+          width 20px
+          height 20px
+          background-position -60px -109px
+        input
+          width 100%
+          height 30px
+          margin-top 5px
+          padding-left 28px
+          border-radius 15px
+      .login
+        position absolute
+        top 0
+        right 0 
+        display block
+        width 50px
+        height 40px
+        line-height 40px
+        color #fff
+        font-size 16px
+        text-align center
+  .jd-slide
+     width 100%
+     position relative
+     overflow hidden
+     ul:first-child
+        width 1000%
+        transform translateX(-10%)
+        li
+          float left
+          width 10%
+        img
+          display block
+          width 100%
+     ul:last-child
+        position absolute
+        left 50%
+        bottom 10px
+        width 118px
+        height 6px
+        margin-left -59px
+        li
+          float left
+          width 6px
+          height 6px
+          margin-right 10px 
+          border 1px solid #fff
+          border-radius 3px;
+        li.active
+          background-color #fff
+        li:last-child
+          margin-right 0
+  .jd-nav
+    width 100%
+    height 150px
+    padding 0 3.125%
+    padding-top 11px
+    border-bottom 1px solid #e0e0e0
+    background-color #fff
+    ul
+      width 100%
+      li
+        float left
+        width 25%
+        height 69px
+        a
+          width 100%
+          height 100%
+          text-align center
+          img
+            display block
+            width 40px
+            height 40px
+            margin 0 auto
+          p
+            font-size 12px
+            color #666
+            margin-top 6px
+  .jd-products
+    margin 0 5px
+    .jd-products-box
+      margin-top 8px
+      box-shadow 0 0 1px 1px #e0e0e0
+      background-color: #fff
+      .products-box-top
+        position relative
+        height 32px
+        border-bottom 1px solid #e0e0e0
+        h3
+          padding-left 15px
+          line-height 32px
+          font-size 15px
+          font-weight inherit
+          &::before
+            position: absolute
+            top 10px
+            left 8px
+            content " "
+            width 3px
+            height 12px
+            background-color #d8505c
+        .sec-k-t-l
+          float left
+          .icon-time
+            display block
+            float left
+            width 16px
+            height 20px
+            margin-left 8px
+            margin-top 6px
+            background url('../images/seckill-icon.png') no-repeat
+            background-size: 16px 20px
+          .os-name
+            float left
+            margin-left 8px
+            line-height 32px
+            color #d8505c
+            font-size 15px
+            font-weight inherit
+          .os-time
+            float left
+            margin-left: 10px
+            margin-top 8px
+            .num
+              display block
+              float left
+              width 15px
+              height 15px
+              line-height 15px
+              margin-left 3px
+              color #fff
+              text-align center
+              background-color: #333
+            .str
+              float left
+              width 4px
+              height 15px
+              margin-left 3px
+              line-height 15px
+              text-align center
+        .sec-k-t-r
+          float right
+          padding-right 6px
+          line-height 32px
+      .no-bor
+        border-bottom none
+      .products-box-bot
+        width 100%
+        ul
+          width 100%
+          li
+            float left
+            width 33.333%
+            a
+             width 100%
+             .img-box
+              width 100%
+              border-right 1px solid #e0e0e0
+              img
+                display block
+                width 64%
+                margin 0 auto;
+             .now-price
+              font-size 14px
+              text-align center
+              color #d8505c
+             .old-price
+              margin-bottom 3px
+              font-size 12px
+              text-align center
+              text-decoration line-through
+          li:last-child
+            .img-box
+              border-right none
+    .shopping
+        .products-box-bot
+          width 100%
+          .pull-left
+            float left
+            width 50%
+          .pull-right
+            float right
+            width 50%
+          .bor-right
+            border-right 1px solid #e0e0e0
+          .bor-bot
+            border-bottom 1px solid #e0e0e0
+          a
+           img
+             width 100%
+             display block
+
+
+

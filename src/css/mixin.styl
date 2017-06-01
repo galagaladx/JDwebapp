@@ -1,0 +1,35 @@
+// checkbox复用
+checkBox()
+    display block
+    height 20px
+    width 20px
+    background url('../images/shop-icon.png') no-repeat
+    background-size 50px 100px
+    background-position 0 0
+checked()
+    background-position -25px 0
+
+numBox(falg = true)
+     display block
+     float left
+     width 32px
+     height 24px
+     line-height: 24px
+     text-align center
+     border 1px solid #e0e0e0
+     if falg
+        border-top-left-radius 2px
+        border-bottom-left-radius 2px
+     else
+        border-top-right-radius 2px
+        border-bottom-right-radius 2px
+btn($color,$bgcolor)
+    float left
+    width 45%
+    height 36px
+    line-height 36px
+    text-align center
+    color $color
+    border 1px solid #e0e0e0
+    border-radius 5px
+    background-color $bgcolor
